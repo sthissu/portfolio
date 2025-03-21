@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    color: orangered;
+    text-shadow: 5px 5px orangered, 10px 10px orangered;
+    transform: scale(1.1);
+}
+
+.navbar a {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: orangered;
+    border-bottom: 3px solid orangered;
+}
+
+.contact {
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.contact:hover {
+    background-color: orangered;
+    box-shadow: 5px 5px orangered;
+    color: white;
+}
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+
+.home-content {
+    max-width: 800px;
+}
+
+.home-content h3 {
+    font-size: 42px;
+}
+
+.home-content h1 {
+    font-size: 60px;
+}
+
+.img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.img-box img:first-child {
+    width: 25%;
+    height: auto;
+    border-radius: 30%;
+    display: block;
+    margin: auto;
+}
+
+.img-box img:nth-child(2) {
+    width: 2%; /* Making the second image smaller */
+    height: auto;
+    border-radius: 20%;
+    display: block;
+    margin: auto;
+}
+
+.small-img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.btn-box {
+    width: 345px;
+    display: flex;
+    gap: 2em;
+}
+
+.btn-1, .btn-2 {
+    padding: 15px 28px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-1 {
+    background-color: black;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 8px;
+}
+
+.btn-2 {
+    background-color: orangered;
+    color: black;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.btn-1:hover, .btn-2:hover {
+    box-shadow: 5px 5px orangered;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: orangered;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.607);
+    width: 50px;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6% 4%; /* Reduced padding */
+    gap: 5em; /* Reduced gap */
+    background: black;
+}
+
+.about-img img {
+    width: 25%; /* Reduced size */
+    box-shadow: 5px 5px orangered, 10px 10px orangered;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+.about-content h2, .about-content h3 {
+    color: white;
+    margin-bottom: 1em;
+}
+
+.about-content h2 {
+    font-size: 28px; /* Reduced font size */
+}
+
+.about-content h3 {
+    font-size: 38px; /* Reduced font size */
+}
+
+.about-content p {
+    color: white;
+    font-size: 16px; /* Reduced font size */
+    margin: 1em;
+}
+
+.services, .experience, .projects, .education {
+    padding: 3% 12%;
+    background: rgb(241, 241, 241);
+    text-align: center;
+}
+
+.heading {
+    font-size: 32px;
+    color: black;
+    margin-bottom: 1.5em;
+}
+
+.heading span {
+    color: orangered;
+}
+
+.services p, .experience p, .projects p, .education p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: gray;
+}
+.contact-section {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0;
+}
+
+.contact-container {
+    background-color: white;
+    padding: 40px;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-heading {
+    font-size: 32px;
+    color: black;
+    margin-bottom: 1em;
+}
+
+.contact-heading span {
+    color: orangered;
+}
+
+.contact-container p {
+    font-size: 16px;
+    margin-bottom: 2em;
+    color: #555;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.form-group input, .form-group textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 15px;
+    outline: none;
+    resize: vertical;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: orangered;
+}
+
+.submit-btn {
+    padding: 15px 28px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: black;
+}
+
+.submit-btn:active {
+    background-color: #333;
+}
+
